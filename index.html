@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Post Block</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="postbox">
+            <div class="container">
+                <form class="postbox__form" action="URL" method="post" name="postform" id="commentform">
+                    <div>
+                        <input class="postbox__input-name error-name" type="text" name="name" id="input-name" value=""
+                            size="25" placeholder="Ваше имя" />
+                        <span class="postbox__name">Имя</span>
+                        <div class="postbox__error-name">Слишком короткое имя</div>
+                    </div>
+                    <div>
+                        <input class="postbox__input-date" type="date" name="date" id="input-date" value=""
+                            size="25" /><span class="postbox__date">Дата</span>
+                    </div>
+                    <div>
+                        <textarea class="postbox__input-text error-text-body" name="postbox-text" id="postbox-text" cols="48"
+                            rows="5"></textarea>
+                        <div class="postbox__error-text" id="postbox__error-text">Слишком короткий комментарий</div>
+                    </div>
+                    <div>
+                        <input class="postbox__input-btn" name="submit" type="submit" id="comment-add"
+                            value="Добавить комментарий" />
+                    </div>
+                </form>
+            </div>
+            <div class="postbox" id="postbox">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
